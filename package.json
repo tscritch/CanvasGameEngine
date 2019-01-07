@@ -1,0 +1,29 @@
+{
+  "name": "canvasgameengine",
+  "version": "1.0.0",
+  "description": "Game Engine built with Canvas and TypeScript",
+  "main": "engine.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "webpack",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "clean-webpack-plugin": "0.1.19",
+    "html-webpack-plugin": "3.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "4.16.5",
+    "webpack-cli": "3.1.0"
+  },
+  "author": "Tad Scritchfield (tadscritch@gmail.com)",
+  "license": "ISC"
+}
